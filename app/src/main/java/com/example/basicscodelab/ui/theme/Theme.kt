@@ -16,19 +16,20 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.ViewCompat
 
-private val DarkColorScheme = darkColorScheme(
+
+public val LightColorScheme = lightColorScheme(
+    surface = Blue,
+    onSurface = Color.White,
+    primary = LightBlue,
+    onPrimary = Navy,
+)
+public val DarkColorScheme = darkColorScheme(
     surface = Blue,
     onSurface = Navy,
     primary = Navy,
     onPrimary = Chartreuse
 )
 
-private val LightColorScheme = lightColorScheme(
-    surface = Blue,
-    onSurface = Color.White,
-    primary = LightBlue,
-    onPrimary = Navy
-)
 
 @Composable
 fun BasicsCodelabTheme(
